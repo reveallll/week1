@@ -5,14 +5,16 @@ public class Main {
 
          Scanner input = new Scanner(System.in);
 
-         double urun;
+         int a,b;
+         double c;
 
-        System.out.println("lütfen ürün değerini giriniz:");
-        urun = input.nextInt();
-        System.out.println("kdvsiz fiyat: " + urun);
-        urun = urun + (urun * 18/100);
-        System.out.println("kdvli fiyat : "+urun);
+        System.out.println("birinci kenar :");
+        a = input.nextInt();
+        System.out.println("ikinci kenar : ");
+        b = input.nextInt();
 
+        c = Math.sqrt((a*a)+(b*b));
+        System.out.println(c);
 
 
         }
