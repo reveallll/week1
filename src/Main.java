@@ -5,20 +5,13 @@ public class Main {
 
          Scanner input = new Scanner(System.in);
 
-         int mat,fiz,geo;
+         double urun;
 
-        System.out.println("mat notunuzu giriniz");
-        mat = input.nextInt();
-        System.out.println("fiz notunuzu giriniz");
-        fiz = input.nextInt();
-        System.out.println("geo notunuzu giriniz");
-        geo = input.nextInt();
-
-       int toplam = mat + fiz + geo;
-       double sonuc = toplam / 3.0;
-
-       String str = (sonuc) >= 50 ? "Geçtiniz" : "Kaldınız";
-        System.out.println(str);
+        System.out.println("lütfen ürün değerini giriniz:");
+        urun = input.nextInt();
+        System.out.println("kdvsiz fiyat: " + urun);
+        urun = urun + (urun * 18/100);
+        System.out.println("kdvli fiyat : "+urun);
 
 
 
